@@ -37,8 +37,8 @@ function getProductInfo(paintColor) {
     
     switch (paintColor) {
         case 'pn1':           
-            colorName = 'Lime Green';
             price = '$14.99';
+            colorName = 'Lime Green';
             updatePrice(colorName, price)
             break;           
         case 'pn2':
@@ -91,7 +91,7 @@ function getProductInfo(paintColor) {
         
         
         let color = document.getElementById('color-name');
-        colorName.textContent = color
+        color.textContent = colorName
         
     }
     
