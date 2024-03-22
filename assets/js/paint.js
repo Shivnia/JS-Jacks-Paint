@@ -35,33 +35,41 @@ function getProductInfo(paintColor) {
     switch (paintColor) {
         case 'pn1':           
             price = '$14.99'; 
-            colorName = 'Lime Green'
+            colorName = 'Lime Green';
             break;           
         case 'pn2':
-            // set variables for price and color name and invoke a function to update the price    
+            price = '$11.14';
+            colorName = 'Medium Brown';
             break;            
         case 'pn3':
-            // set variables for price and color name and invoke a function to update the price  
+            price = '$22.99';
+            colorName = 'Royal Blue';
             break;   
         case 'pn4':
-            // set variables for price and color name and invoke a function to update the price  
+            price = '$4.99';
+            colorName = 'Solid Black';
             break;   
         case 'pn5':
-            // set variables for price and color name and invoke a function to update the price       
+            price = '$8.22';
+            colorName = 'Solid Cyan';
             break;   
         case 'pn6':
-            // set variables for price and color name and invoke a function to update the price        
+            price = '$11.99';
+            colorName = 'Solid Purple';
             break;   
         case 'pn7':
-            // set variables for price and color name and invoke a function to update the price 
+            price = '$13.42';
+            colorName = 'Solid Red';
             break;   
         case 'pn8':
-            // set variables for price and color name and invoke a function to update the price   
+            price = '$21.98';
+            colorName = 'Solid White';
             break;   
         case 'pn9':
-            // set variables for price and color name and invoke a function to update the price 
+            price = '$14.99';
+            colorName = 'Solid Yellow';
             break;   
-          default:              
+        default:              
     }
 
     function updatePrice(colorName, price)
