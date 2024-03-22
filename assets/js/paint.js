@@ -3,8 +3,8 @@ function configureListeners() {
 
 
     for (let i = 0; i < images.length; i++) {        
-        document.getElementById(images[i].id).addEventListener('mouseover', addOpacity, false)
-        document.getElementById(images[i].id).addEventListener('mouseout', removeOpacity, false)
+        document.getElementById(images[i].id).addEventListener('mouseover', addOpacity, false);
+        document.getElementById(images[i].id).addEventListener('mouseout', removeOpacity, false);
         // iterate over images and add mouseover event listeners  
 
     } 
@@ -91,7 +91,7 @@ function getProductInfo(paintColor) {
         
         
         let color = document.getElementById('color-name');
-        colorName.textContent = color;
+        colorName.textContent = color
         
     }
     
