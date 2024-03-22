@@ -1,19 +1,23 @@
 function configureListeners() {
-    let images = // select img elements  
+    let images = document.getElementsByTagName('img') 
 
 
-     for (var i = 0; i < images.length; i++) {        
+    for (let i = 0; i < images.length; i++) {        
         // iterate over images and add mouseover event listeners      
     } 
 }
 
 function addOpacity(event) {
-    // add appropriate CSS class
+    if (!this.classList.contains('dim')){
+        this.classList.add('dim')
+    }
     getProductInfo(event.target.id);     
 }
 
 function removeOpacity(event) {
-     //remove appropriate CSS class
+    if (this.classList.contains('dim')) {
+        this.classList.remove('dim');
+    }
 
     let element = document.getElementById('color-price');
         element.textContent = '';
@@ -30,7 +34,8 @@ function getProductInfo(paintColor) {
     
     switch (paintColor) {
         case 'pn1':           
-            // set variables for price and color name and invoke a function to update the price     
+            price = '$14.99'; 
+            colorName = 'Lime Green'
             break;           
         case 'pn2':
             // set variables for price and color name and invoke a function to update the price    
